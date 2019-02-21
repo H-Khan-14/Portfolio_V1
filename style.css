@@ -1,0 +1,476 @@
+@font-face {
+  font-family: 'Batman-Forever';
+  src: url(../HKhan-Portfolio/assets/b-font/batfont.ttf);
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.hero-nightsky {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.hero-title {
+  font-family: 'Batman-Forever';
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #d4af37;
+  position: absolute;
+  top: 25%;
+  left: 7%;
+  font-size: 145px;
+  z-index: 3;
+}
+
+.nav-bar {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 5px solid #d4af37;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.sub-heading {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 52px;
+  margin-top: 100px;
+}
+
+.sub-heading h2 {
+  padding-bottom: 15px;
+  display: inline-block;
+  border-bottom: 5px solid black;
+}
+
+.flash {
+  margin-top: 10px;
+  height: 175px;
+  width: 175px;
+}
+
+.atom {
+  height: 175px;
+  width: 175px;
+}
+
+.tech {
+  height: 175px;
+  width: 175px;
+}
+
+.super {
+  margin-top: 25px;
+  height: 175px;
+  width: 175px;
+}
+
+.magic {
+  margin-top: -30px;
+  height: 175px;
+  width: 175px;
+}
+
+.circle {
+  background-color: #d4af37;
+  height: 200px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tool-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.tool-wrapper p {
+  color: #8a817c;
+}
+
+.tool-logos {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.blue-circle {
+  background-color: #d4af37;
+  height: 200px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 42px;
+}
+
+.blue-circle img {
+  width: 80%;
+  height: 80%;
+}
+
+.adjust {
+  margin-top: 36px;
+}
+
+.bio-area {
+  display: flex;
+  font-family: 'Batman-Forever';
+  background: 
+  /* top, transparent red */ linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+      url('https://poloclub.princeton.edu/wp-content/uploads/sites/210/2014/02/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
+}
+
+.bio-image {
+  background-image: url('./assets/H.Khan.jpg');
+  width: 50%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+}
+
+.bio-text {
+  width: 50%;
+  margin: 0 25px;
+}
+
+.bio-text h3 {
+  font-size: 39px;
+  margin-top: 25px;
+}
+
+.bio-text p {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.triangle {
+  height: 150px;
+  width: 100%;
+  margin-top: 0;
+  background: 
+  /* top, transparent red */ linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+      url('https://poloclub.princeton.edu/wp-content/uploads/sites/210/2014/02/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
+  clip-path: polygon(0 0, 49% 100%, 100% 0);
+}
+
+.contact-area {
+  width: 100%;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cme {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  padding: 10px 15px;
+  background: #000;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  color: #d4af37;
+}
+
+.cmess {
+  height: 150px;
+}
+
+form {
+  width: 500px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  border: 2px solid #000;
+  box-sizing: inherit;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px 0 0 0;
+  font-size: 12pt;
+  padding: 10px 30px;
+  color: #d4af37;
+  background: #000;
+  outline: 0;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+footer {
+  height: 200px;
+  background-color: #000;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-box {
+  height: 52px;
+  width: 52px;
+  background-color: black;
+  margin: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-box:hover {
+  background-color: #d4af37;
+}
+
+.footer-box a {
+  color: white;
+}
+
+.footer-box a:hover {
+  color: white;
+}
+
+.info-container {
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Batman-Forever';
+  color: #8a817c;
+}
+
+.info-container span {
+  color: #d4af37;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    transform: perspective(400px) rotateY(90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-20deg);
+    transform: perspective(400px) rotateY(-20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotateY(10deg);
+    transform: perspective(400px) rotateY(10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotateY(-5deg);
+    transform: perspective(400px) rotateY(5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes toBottomFromTop {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
